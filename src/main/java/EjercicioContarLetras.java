@@ -1,6 +1,5 @@
 import java.util.HashMap;
-
-
+import java.util.LinkedHashMap;
 
 
 public class EjercicioContarLetras {
@@ -11,7 +10,7 @@ public class EjercicioContarLetras {
             return null;
 
         char[] array = entrada.toLowerCase().toCharArray();
-        HashMap<Character, Integer> map = new HashMap<>();
+        LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
 
         for (Character c:array) {
             if (map.containsKey(c)){
