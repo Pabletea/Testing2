@@ -30,5 +30,31 @@ public class TestEjercicioContarLetras {
         System.out.println("Test 02 realizado");
 
     }
+    @Test
+    public void Test03(){
+
+        String palabra=null;
+
+        String outputEsperado=null;
+
+        String output= EjercicioContarLetras.Repeticiones(palabra);
+
+        Assertions.assertEquals(outputEsperado,output);
+
+        System.out.println("Test 03 realizado");
+    }
+    @Test
+    public void Test04(){
+
+        String palabra=" ";
+
+        String outputEsperado="{ =1}";
+
+        String output= EjercicioContarLetras.Repeticiones(palabra);
+
+        Assertions.assertEquals(outputEsperado,output);
+
+        System.out.println("Test 04 realizado");
+    }
 
 }
